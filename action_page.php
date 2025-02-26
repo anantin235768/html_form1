@@ -1,12 +1,19 @@
 <?php 
     var_dump(value: $_POST);
-    $servename = "localhost";
-    $servename ="root";
-    $password = "";
+    $fullname='';
+    $gender='';
+    $country='';
+
+    $full_name=$_POST["Name"];
+    $gender=$_POST["Gender"];
+    $country=$_POST["country"];
+
     ?>
 
     <?php
-
+    $servename = "localhost";
+    $servename ="root";
+    $password = "";
     // Create connection
     $con  = new mysqli(hostname:$servername, username: $username, password: $password);
 
